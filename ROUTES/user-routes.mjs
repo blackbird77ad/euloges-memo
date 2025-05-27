@@ -8,3 +8,5 @@ const userRouter = Router();
 //User Authentication routes
 userRouter.post('/signup', signUser);
 userRouter.post('/signin', SignIn)
+
+export default userRouter;
