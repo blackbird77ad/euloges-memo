@@ -1,0 +1,32 @@
+{
+  "name": "Euloges phase 2",
+  "version": "1.0.0",
+  "description": "Memorial creation web app",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --env-file=.env index.mjs",
+    "start": "node ."
+  },
+  "keywords": [
+    "Memorial",
+    "online",
+    "memorial",
+    "creation",
+    "bar",
+    "code",
+    "memorial"
+  ],
+  "author": "Davida Prempeh",
+  "license": "ISC",
+  "dependencies": {
+    "@reis/mongoose-to-json": "^3.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "nodemon": "^3.1.10"
+  }
+}
