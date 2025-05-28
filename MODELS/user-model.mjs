@@ -7,7 +7,6 @@ const userSchema = new Schema({
     firstName: { type: String },
     lastName: { type: String },
     telephone: {type: Number},
-    country: {type: String}
 },
 {
  timestamps: true
