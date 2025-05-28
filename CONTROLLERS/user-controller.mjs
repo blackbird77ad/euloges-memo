@@ -31,7 +31,7 @@ export const  signUser = async (req, res, next) => {
         // Respond to the request
         return res.status(201).json({
             message: "User successfully registered!",
-            user: userWithoutPassword
+            newUser
         });
 
     } catch (error) {
