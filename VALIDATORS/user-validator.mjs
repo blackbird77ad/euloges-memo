@@ -4,8 +4,7 @@ export const userValidator = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().min(6).required(),
   firstName: Joi.string().optional(),
-  LastName: Joi.string().optional(),
-  dateOfBirth: Joi.date(), 
+  lastName: Joi.string().optional(),
   telephone: Joi.number().optional(),
-  country: Joi.string().optional()
+  
 });
