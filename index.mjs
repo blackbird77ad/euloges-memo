@@ -5,6 +5,7 @@ import cors from "cors"
 
 //internal import
 import userRouter from "./ROUTES/user-routes.mjs";
+import memorialRouter from "./ROUTES/memorial-routes.mjs";
 
 //Database connection
 const MONGODB_URI = process.env.MONGODB_URI;
@@ -25,6 +26,7 @@ app.use(cors());
 
 //use app
 app.use(userRouter);
+app.use(memorialRouter)
 
 //listen for incoming request
 const PORT = 5500;

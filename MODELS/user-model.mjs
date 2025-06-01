@@ -7,6 +7,7 @@ const userSchema = new Schema({
     firstName: { type: String },
     lastName: { type: String },
     telephone: {type: Number},
+    memorial: [{ type: Types.ObjectId, ref: "Memorial"}]
 },
 {
  timestamps: true
