@@ -29,15 +29,15 @@ export const createMemo = async (req, res, next) => {
 
     await memorial.save();
 
-    // 4. Associate the memorial with the user 
+    // 4.Associate the memorial with the user 
     user.memorials = user.memorials || [];
     user.memorials.push(memorial._id);
     await user.save();
 
-    // 5. Respond with success
+    // 5.Respond with success
     res.status(201).json({
       status: "success",
-      message: "Memorial created successfully",
+      message: "Memorial Created Successfully",
       memorial
     });
   } catch (error) {
