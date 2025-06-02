@@ -16,7 +16,7 @@ export const verifyToken = (req, res, next) => {
         const decoded = jwt.verify(token, process.env.JWT_PRIVATE_KEY);
         // console.log("Decoded Token:", decoded);  // token payload
 
-        req.auth = decoded; // Attach user data to request
+        req.user = decoded; // Attach user data to request
 
         next();
     } catch (error) {
